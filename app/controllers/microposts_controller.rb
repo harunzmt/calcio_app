@@ -5,17 +5,18 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      flash[:success] = "Micropost created!"
+      flash[:success] = "投稿されました!"
       redirect_to root_url
     else
       @feed_items = []
-      render 'static_pages/home'
+      flash[:danger] = "投稿が空欄です。"
+      redirect_to root_url
     end
   end
 
   def destroy
     @micropost.destroy
-    flash[:success] = "Micropost deleted"
+    flash[:success] = "投稿が削除されました！"
     redirect_to request.referrer || root_url
   end
 

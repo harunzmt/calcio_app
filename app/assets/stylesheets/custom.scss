@@ -15,6 +15,11 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  background-image: url(http://www.juventus.com/media/images/news-images/2018-19/partite/jsas_commento.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
 section {
@@ -29,13 +34,43 @@ textarea {
   text-align: center;
   h1 {
     margin-bottom: 10px;
+    color: black;
+    font-family: 'noto sans CJK';
+    font-size:100px;
+    text-shadow: 2px 2px 0 green
+  }
+  h2 {
+    font-size: 40px;
+    color: black;
+    font-family: 'noto sans CJK';
+    text-shadow: 2px 2px 0 green
   }
 }
+
+.jumbotron {
+  background: rgba(255,255,255,0);
+}
+
+.btn-primary {
+    background: black; //ボタンの背景色
+    color: white; //ボタンのテキストの色
+    border: 1px solid white;
+}
+
+.btn-primary:hover {
+  background:#333333;
+  color: white;
+  border: 1px solid white;
+}
+
+
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: black;
+  text-shadow: 1px 1px 0 #FFF
 }
 
 h1 {
@@ -43,6 +78,8 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  text-shadow: 1px 1px 0 #FFF
+
 }
 
 h2 {
@@ -51,12 +88,28 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: black;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: yellow;
+}
+
+a {
+  color: #e00f3c;
+  &:hover {
+    color: #dc4364;
+    transition: 1s;
+    text-decoration: none;
+  }
+}
+
+/* signup */
+
+label {
+  color: black;
 }
 
 
@@ -72,9 +125,28 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: red;
     text-decoration: none;
+    transition: 1s;
   }
+}
+
+.navbar {
+  background-color: green;
+}
+
+.navbar-inverse {
+  border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    
+    &:hover {
+      color: red;
+      transition: 1s;
+    }
+    
 }
 
 /* footer */
@@ -82,18 +154,22 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  border-top: 1px solid ;
+  color: white;
   a {
-    color: $gray;
+    color: white;
     &:hover {
-      color: $gray-darker;
+      color: black;
+      transition: 1s;
+      text-decoration: none;
     }
   }
-  small {
+  medium {
     float: left;
+    color: white;
   }
   ul {
+    color:white;
     float: right;
     list-style: none;
     li {
@@ -158,7 +234,7 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
-    color: gray;
+    color: white;
     &:first-child {
       padding-left: 0;
       border: 0;
@@ -235,16 +311,21 @@ input {
 .users {
   list-style: none;
   margin: 0;
+  background: rgba(0,0,0,0.5);
   li {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
+  }
+  a {
+    color: white;
   }
 }
 
 /* microposts */
 
 .microposts {
+  color: white;
   list-style: none;
   padding: 0;
   li {
@@ -254,6 +335,9 @@ input {
   .user {
     margin-top: 5em;
     padding-top: 0;
+    a {
+      color: white;
+    }
   }
   .content {
     display: block;
@@ -264,15 +348,22 @@ input {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: white;
     display: block;
     margin-left: 60px;
+    a {
+      color: red;
+    }
   }
   .gravatar {
     float: left;
     margin-right: 10px;
     margin-top: 5px;
   }
+  .span {
+    color: white;
+  }
+
 }
 
 aside {
@@ -287,4 +378,17 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.user_info span{
+  color: white;
+}
+
+.user_info a {
+  color: white;
+}
+
+
+.col-md-8 {
+  background: rgba(0,0,0,0.5);
 }
