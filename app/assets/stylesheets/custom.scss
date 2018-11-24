@@ -11,16 +11,18 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+
+
 /* universal */
+
+  
 
 body {
   padding-top: 60px;
-  background-image: url(http://www.juventus.com/media/images/news-images/2018-19/partite/jsas_commento.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
+  
 }
+
+
 
 section {
   overflow: auto;
@@ -45,6 +47,7 @@ textarea {
     font-family: 'noto sans CJK';
     text-shadow: 2px 2px 0 green
   }
+  
 }
 
 .jumbotron {
@@ -275,6 +278,7 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+  color: white;
 }
 
 #error_explanation {
@@ -394,7 +398,8 @@ span.picture {
 .row  {
   background: rgba(0,0,0,0.5);
   border: none;
-  
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .link {
@@ -408,3 +413,18 @@ p {
   color: white;
   text-align: center;
 }
+
+medium {
+  font-size: 15px;
+  text-shadow: 1px 1px 0 #000
+}
+
+body {
+  background-image: image-url("main.jpg"); 
+  //background-image: url(http://www.juventus.com/media/images/news-images/2018-19/partite/jsas_commento.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
