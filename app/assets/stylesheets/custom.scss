@@ -153,6 +153,25 @@ label {
     
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+  background-color: green;
+  color: red;
+}
+
+.dropdown-menu {
+  background-color: green;
+}
+
+.dropdown-menu > li > a {
+  color: white; 
+    &:hover {
+      color: red;
+      transition: 1s;
+      display: block;
+      background-color: green;
+    }
+  
+}
 /* footer */
 
 footer {
