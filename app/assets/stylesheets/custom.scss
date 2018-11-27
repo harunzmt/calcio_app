@@ -67,6 +67,24 @@ textarea {
   border: 1px solid white;
 }
 
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #333333;
+  border: 1px solid white;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(2,117,216,.25);
+    box-shadow: 0 0 0 2px rgba(2,117,216,.25);
+}
 
 
 /* typography */
@@ -454,6 +472,3 @@ body {
   text-shadow: 1px 1px 0 #FFF
 }
 
-.picture {
-  display: inline;
-}
