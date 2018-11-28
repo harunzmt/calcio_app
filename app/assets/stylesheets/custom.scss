@@ -55,30 +55,19 @@ textarea {
   background: rgba(0,0,0,0.5);
 }
 
-.btn-primary {
+.btn {
     background: black; //ボタンの背景色
     color: white; //ボタンのテキストの色
     border: 1px solid white;
 }
 
-.btn-primary:hover {
+.btn:hover {
   background:#333333;
   color: white;
   border: 1px solid white;
 }
 
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus {
-  background-color: #333333;
-  border: 1px solid white;
-}
+
 
 .btn.focus, .btn:focus {
     outline: 0;
@@ -91,7 +80,7 @@ fieldset[disabled] .btn-primary.focus {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: white;
+  color: black;
   text-shadow: 1px 1px 0 #FFF
 }
 
@@ -100,6 +89,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: white;
   
 
 }
@@ -110,7 +100,11 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: black;
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 
 p {
